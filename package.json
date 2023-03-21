@@ -1,0 +1,34 @@
+{
+  "name": "barocert",
+  "version": "1.0.0",
+  "description": "Barocert API SDK for node. see www.barocert.com",
+  "author": "",
+  "contributors": [
+    {
+      "name": "",
+      "email": "code@linkhubcorp.com"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "linkhub": "^1.7.0",
+    "sync-request": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linkhub-sdk/node-barocert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linkhub-sdk/node-barocert/issues"
+  },
+  "keywords": [
+    "barocert",
+    "sdk"
+  ],
+  "preferGlobal": true,
+  "subdomain": "barocert",
+  "license": "MIT"
+}
