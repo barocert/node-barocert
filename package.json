@@ -6,7 +6,7 @@
   "contributors": [
     {
       "name": "",
-      "email": "code@linkhubcorp.com"
+      "email": "dev@linkhubcorp.com"
     }
   ],
   "main": "index.js",
@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linkhub-sdk/node-barocert.git"
+    "url": "https://github.com/barocert/node-barocert.git"
   },
   "bugs": {
-    "url": "https://github.com/linkhub-sdk/node-barocert/issues"
+    "url": "https://github.com/barocert/node-barocert/issues"
   },
   "keywords": [
     "barocert",
