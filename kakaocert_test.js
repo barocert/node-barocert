@@ -17,7 +17,7 @@ var kakaocertService = kakaocert.KakaocertService();
 //     receiverHP: kakaocertService._encrypt('01054437896'),
 //     receiverName: kakaocertService._encrypt('최상혁'),
 //     receiverBirthday: kakaocertService._encrypt('19880301'),
-//     // ci : '',
+//     ci: '',
 //     reqTitle: '인증요청 메시지 제목란',
 //     expireIn: 1000,
 //     token: kakaocertService._encrypt('본인인증요청토큰'),
@@ -147,12 +147,12 @@ var CMS = {
 };
 
 // 출금동의 요청
-// kakaocertService.requestCMS('023030000004', CMS,
-//     function (response) {
-//         console.log(response)
-//     }, function (error) {
-//         console.log(error)
-//     });
+kakaocertService.requestCMS('023030000004', CMS,
+    function (response) {
+        console.log(response)
+    }, function (error) {
+        console.log(error)
+    });
 
 // 출금동의 요청
 // kakaocertService.getCMSStatus('023030000004', '02304170230300000040000000000037',
@@ -163,11 +163,11 @@ var CMS = {
 //     });
 
 // // 출금동의 검증
-kakaocertService.verifyCMS('023030000004', '02304170230300000040000000000037',
-    function (response) {
-        console.log(response)
-    }, function (error) {
-        console.log(error)
-    });
+// kakaocertService.verifyCMS('023030000004', '02304170230300000040000000000037',
+//     function (response) {
+//         console.log(response)
+//     }, function (error) {
+//         console.log(error)
+//     });
 
 
