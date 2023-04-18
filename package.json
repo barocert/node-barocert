@@ -1,11 +1,11 @@
 {
   "name": "barocert",
   "version": "1.0.0",
-  "description": "Barocert API SDK for node. see www.barocert.com",
+  "description": "Barocert API SDK for node. see www.linkhub.co.kr",
   "author": "",
   "contributors": [
     {
-      "name": "",
+      "name": "linkhub dev",
       "email": "dev@linkhubcorp.com"
     }
   ],
