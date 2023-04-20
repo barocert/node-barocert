@@ -14,9 +14,9 @@ var kakaocertService = kakaocert.KakaocertService();
 
 
 // var Identity = {
-//     receiverHP: kakaocertService._encrypt('01054437896'),
-//     receiverName: kakaocertService._encrypt('최상혁'),
-//     receiverBirthday: kakaocertService._encrypt('19880301'),
+//     receiverHP: kakaocertService._encrypt('01012341234'),
+//     receiverName: kakaocertService._encrypt('홍길동'),
+//     receiverBirthday: kakaocertService._encrypt('19700101'),
 //     ci: '',
 //     reqTitle: '인증요청 메시지 제목란',
 //     expireIn: 1000,
@@ -50,9 +50,9 @@ var kakaocertService = kakaocert.KakaocertService();
 
 
 // var requestSign = {
-//     receiverHP: kakaocertService._encrypt('01054437896'),
-//     receiverName: kakaocertService._encrypt('최상혁'),
-//     receiverBirthday: kakaocertService._encrypt('19880301'),
+//     receiverHP: kakaocertService._encrypt('01012341234'),
+//     receiverName: kakaocertService._encrypt('홍길동'),
+//     receiverBirthday: kakaocertService._encrypt('19700101'),
 //     // ci : '',
 //     reqTitle: '전자서명단건테스트',
 //     expireIn: 1000,
@@ -86,9 +86,9 @@ var kakaocertService = kakaocert.KakaocertService();
 //     });
 
 // var multiSign = {
-//     receiverHP: kakaocertService._encrypt('01054437896'),
-//     receiverName: kakaocertService._encrypt('최상혁'),
-//     receiverBirthday: kakaocertService._encrypt('19880301'),
+//     receiverHP: kakaocertService._encrypt('01012341234'),
+//     receiverName: kakaocertService._encrypt('홍길동'),
+//     receiverBirthday: kakaocertService._encrypt('19700101'),
 //     // ci : '',
 //     reqTitle: '전자서명복수테스트',
 //     expireIn: 1000,
@@ -131,9 +131,9 @@ var kakaocertService = kakaocert.KakaocertService();
 
 
 var CMS = {
-    receiverHP: kakaocertService._encrypt('01054437896'),
-    receiverName: kakaocertService._encrypt('최상혁'),
-    receiverBirthday: kakaocertService._encrypt('19880301'),
+    receiverHP: kakaocertService._encrypt('01012341234'),
+    receiverName: kakaocertService._encrypt('홍길동'),
+    receiverBirthday: kakaocertService._encrypt('19700101'),
     // ci : '',
     reqTitle: '인증요청 메시지 제공란',
     expireIn: 1000,
@@ -142,7 +142,7 @@ var CMS = {
     bankName: kakaocertService._encrypt('출금은행명란'),
     bankAccountNum: kakaocertService._encrypt('9-4324-5117-58'),
     bankAccountName: kakaocertService._encrypt('예금주명 입력란'),
-    bankAccountBirthday: kakaocertService._encrypt('19880301'),
+    bankAccountBirthday: kakaocertService._encrypt('19700101'),
     bankServiceType: kakaocertService._encrypt('CMS')
 };
 
