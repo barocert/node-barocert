@@ -1,6 +1,6 @@
 {
   "name": "barocert",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Barocert API SDK for node. see www.linkhub.co.kr",
   "author": "",
   "contributors": [
@@ -14,7 +14,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "linkhub": "^1.7.0",
+    "linkhub": "^1.8.0",
     "sync-request": "^2.0.0"
   },
   "repository": {
