@@ -106,9 +106,7 @@ var kakaocertService = kakaocert.KakaocertService();
 //         console.log(error)
 //     });
 
-
-
-// 전자서명 상태확인(단건)
+// 전자서명 상태확인(복수)
 // kakaocertService.getMultiSignStatus('023040000001', '02304170230300000040000000000036',
 //     function (response) {
 //         console.log(response)
@@ -123,7 +121,6 @@ var kakaocertService = kakaocert.KakaocertService();
 //     }, function (error) {
 //         console.log(error)
 //     });
-
 
 // var CMS = {
 //     receiverHP: kakaocertService._encrypt('01012341234'),
@@ -165,3 +162,10 @@ var kakaocertService = kakaocert.KakaocertService();
 //     });
 
 
+// // 간편로그인 검증
+// kakaocertService.verifyLogin('023040000001', '011537db12-a0cd-488c-8a61-522cf9567c11',
+//     function (response) {
+//         console.log(response)
+//     }, function (error) {
+//         console.log(error)
+//     });

@@ -1,6 +1,7 @@
 var KakaocertService = require('./lib/KakaocertService');
+var PasscertService = require('./lib/PasscertService');
 
-var configuration = { LinkID: 'BKAKAO', SecretKey: 'egkxYN99ZObjLa3c0nr9/riG+a0VDkZu87LSGR8c37U=' };
+var configuration = { LinkID: '', SecretKey: '' };
 
 exports.config = function (config) {
     configuration = config;
@@ -11,4 +12,11 @@ exports.KakaocertService = function () {
         this._KakaocertService = new KakaocertService(configuration);
     }
     return this._KakaocertService;
+}
+
+exports.PasscertService = function() {
+    if (!this._PasscertService) {
+        this._PasscertService = new PasscertService(configuration);
+    }
+    return this._PasscertService;
 }
