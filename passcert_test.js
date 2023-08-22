@@ -169,7 +169,7 @@ var passcertService = passcert.PasscertService();
 //         console.log(error)
 //     });
 
-// 본인인증 상태확인
+// 간편로그인 상태확인
 // passcertService.getLoginStatus('023040000001', '02304170230300000040000000000035',
 //     function (response) {
 //         console.log(response)
@@ -182,7 +182,7 @@ var passcertService = passcert.PasscertService();
 //     receiverName: passcertService._encrypt('홍길동'),
 // };
 
-// 본인인증 검증
+// 간편로그인 검증
 // passcertService.verifyLogin('023040000001', '02304170230300000040000000000035', LoginVerify, 
 //     function (response) {
 //         console.log(response)

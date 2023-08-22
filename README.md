@@ -1,5 +1,5 @@
 # node-barocert
-barocert node.js SDK v1.1.0
+barocert node.js SDK v1.1.1
 
 ## Install
 
