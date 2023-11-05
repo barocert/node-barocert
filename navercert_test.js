@@ -47,11 +47,11 @@ var navercertService = navercert.NavercertService();
 //      receiverHP: navercertService._encrypt('01012341234'),
 //      receiverName: navercertService._encrypt('홍길동'),
 //      receiverBirthday: navercertService._encrypt('19700101'),
+//      reqTitle: '전자서명(단건) 요청 메시지 제목',
+//      reqMessage: navercertService._encrypt('전자서명(단건) 요청 메시지'),
 //      callCenterNum: '15441234',
+//      token: navercertService._encrypt('전자서명(단건) 요청 원문'),
 //      tokenType: 'TEXT',
-//      token: navercertService._encrypt('전자서명단건테스트데이터'),
-//      reqTitle: '전자서명단건테스트',
-//      reqMessage: navercertService._encrypt('전자서명단건테스트데이터'),
 //      expireIn: 1000
 // };
 
@@ -83,16 +83,16 @@ var navercertService = navercert.NavercertService();
 //     receiverHP: navercertService._encrypt('01012341234'),
 //     receiverName: navercertService._encrypt('홍길동'),
 //     receiverBirthday: navercertService._encrypt('19700101'),
+//     reqTitle: '전자서명(복수) 요청 메시지 제목',
+//     reqMessage: navercertService._encrypt('전자서명(복수) 요청 메시지'),
 //     callCenterNum: '15441234',
-//     reqTitle: '전자서명복수테스트',
-//     reqMessage: navercertService._encrypt('전자서명복수테스트데이터'),
 //     expireIn: 1000,
 //     tokens: [{
 //         tokenType: 'TEXT',
-//         token: navercertService._encrypt('테스트')
+//         token: navercertService._encrypt('전자서명(복수) 요청 원문 1')
 //     }, {
 //         tokenType: 'TEXT',
-//         token: navercertService._encrypt('테스트')
+//         token: navercertService._encrypt('전자서명(복수) 요청 원문 2')
 //     }]
 // };
 

@@ -15,9 +15,9 @@ var kakaocertService = kakaocert.KakaocertService();
 //     receiverHP: kakaocertService._encrypt('01012341234'),
 //     receiverName: kakaocertService._encrypt('홍길동'),
 //     receiverBirthday: kakaocertService._encrypt('19700101'),
-//     reqTitle: '인증요청 메시지 제목란',
+//     reqTitle: '본인인증 요청 메시지 제목',
 //     expireIn: 1000,
-//     token: kakaocertService._encrypt('본인인증요청토큰'),
+//     token: kakaocertService._encrypt('본인인증 요청 원문'),
 //     returnURL: 'https://kakao.barocert.com'
 // };
 
@@ -50,9 +50,9 @@ var kakaocertService = kakaocert.KakaocertService();
 //     receiverHP: kakaocertService._encrypt('01012341234'),
 //     receiverName: kakaocertService._encrypt('홍길동'),
 //     receiverBirthday: kakaocertService._encrypt('19700101'),
-//     reqTitle: '전자서명단건테스트',
+//     reqTitle: '전자서명(단건) 요청 메시지 제목',
 //     expireIn: 1000,
-//     token: kakaocertService._encrypt('전자서명단건테스트데이터'),
+//     token: kakaocertService._encrypt('전자서명(단건) 요청 원문'),
 //     tokenType: 'TEXT',
 //     returnURL: 'https://kakao.barocert.com',
 // };
@@ -85,14 +85,14 @@ var kakaocertService = kakaocert.KakaocertService();
 //     receiverHP: kakaocertService._encrypt('01012341234'),
 //     receiverName: kakaocertService._encrypt('홍길동'),
 //     receiverBirthday: kakaocertService._encrypt('19700101'),
-//     reqTitle: '전자서명복수테스트',
+//     reqTitle: '전자서명(복수) 요청 메시지 제목',
 //     expireIn: 1000,
 //     tokens: [{
-//         reqTitle: '전자서명복수테스트',
-//         token: kakaocertService._encrypt('테스트')
+//         reqTitle: '전자서명(복수) 요청 메시지 제목 1',
+//         token: kakaocertService._encrypt('전자서명(복수) 요청 메시지 원문 1')
 //     }, {
-//         reqTitle: '전자서명복수테스트',
-//         token: kakaocertService._encrypt('테스트')
+//         reqTitle: '전자서명(복수) 요청 메시지 제목 2',
+//         token: kakaocertService._encrypt('전자서명(복수) 요청 메시지 원문 2')
 //     }],
 //     tokenType: 'TEXT',
 //     returnURL: 'https://kakao.barocert.com'
@@ -126,7 +126,7 @@ var kakaocertService = kakaocert.KakaocertService();
 //     receiverHP: kakaocertService._encrypt('01012341234'),
 //     receiverName: kakaocertService._encrypt('홍길동'),
 //     receiverBirthday: kakaocertService._encrypt('19700101'),
-//     reqTitle: '인증요청 메시지 제공란',
+//     reqTitle: '출금동의 요청 메시지 제목',
 //     expireIn: 1000,
 //     returnURL: 'https://kakao.barocert.com',
 //     requestCorp: kakaocertService._encrypt('청구 기관명란'),
