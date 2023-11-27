@@ -11,17 +11,18 @@ kakaocert.config({
 var kakaocertService = kakaocert.KakaocertService();
 
 
+//본인인증 요청
 // var Identity = {
-//     receiverHP: kakaocertService._encrypt('01012341234'),
-//     receiverName: kakaocertService._encrypt('홍길동'),
-//     receiverBirthday: kakaocertService._encrypt('19700101'),
+//     receiverHP: kakaocertService._encrypt('01067668440'),
+//     receiverName: kakaocertService._encrypt('정우석'),
+//     receiverBirthday: kakaocertService._encrypt('19900911'),
 //     reqTitle: '본인인증 요청 메시지 제목',
+//     extraMessage: kakaocertService._encrypt('본인인증 상세 설명'),
 //     expireIn: 1000,
 //     token: kakaocertService._encrypt('본인인증 요청 원문'),
 //     returnURL: 'https://kakao.barocert.com'
 // };
 
-// 본인인증 요청
 // kakaocertService.requestIdentity('023040000001', Identity,
 //     function (response) {
 //         console.log(response)
@@ -46,18 +47,19 @@ var kakaocertService = kakaocert.KakaocertService();
 //     });
 
 
+// 전자서명 요청(단건)
 // var requestSign = {
-//     receiverHP: kakaocertService._encrypt('01012341234'),
-//     receiverName: kakaocertService._encrypt('홍길동'),
-//     receiverBirthday: kakaocertService._encrypt('19700101'),
-//     reqTitle: '전자서명(단건) 요청 메시지 제목',
+//     receiverHP: kakaocertService._encrypt('01067668440'),
+//     receiverName: kakaocertService._encrypt('정우석'),
+//     receiverBirthday: kakaocertService._encrypt('19900911'),
+//     signTitle: '전자서명(단건) 서명 요청 제목',
+//     extraMessage: kakaocertService._encrypt('전자서명(단건) 상세 설명'),
 //     expireIn: 1000,
 //     token: kakaocertService._encrypt('전자서명(단건) 요청 원문'),
 //     tokenType: 'TEXT',
 //     returnURL: 'https://kakao.barocert.com',
 // };
 
-// 전자서명 요청(단건)
 // kakaocertService.requestSign('023040000001', requestSign,
 //     function (response) {
 //         console.log(response)
@@ -81,24 +83,25 @@ var kakaocertService = kakaocert.KakaocertService();
 //         console.log(error)
 //     });
 
+// 전자서명 요청(복수)
 // var multiSign = {
-//     receiverHP: kakaocertService._encrypt('01012341234'),
-//     receiverName: kakaocertService._encrypt('홍길동'),
-//     receiverBirthday: kakaocertService._encrypt('19700101'),
+//     receiverHP: kakaocertService._encrypt('01067668440'),
+//     receiverName: kakaocertService._encrypt('정우석'),
+//     receiverBirthday: kakaocertService._encrypt('19900911'),
 //     reqTitle: '전자서명(복수) 요청 메시지 제목',
+//     extraMessage: kakaocertService._encrypt('전자서명(복수) 상세 설명'),
 //     expireIn: 1000,
 //     tokens: [{
-//         reqTitle: '전자서명(복수) 요청 메시지 제목 1',
+//         signTitle: '전자서명(복수) 서명 요청 제목 1',
 //         token: kakaocertService._encrypt('전자서명(복수) 요청 메시지 원문 1')
 //     }, {
-//         reqTitle: '전자서명(복수) 요청 메시지 제목 2',
+//         signTitle: '전자서명(복수) 서명 요청 제목 2',
 //         token: kakaocertService._encrypt('전자서명(복수) 요청 메시지 원문 2')
 //     }],
 //     tokenType: 'TEXT',
 //     returnURL: 'https://kakao.barocert.com'
 // };
 
-// 전자서명 요청(복수)
 // kakaocertService.requestMultiSign('023040000001', multiSign,
 //     function (response) {
 //         console.log(response)
@@ -122,22 +125,23 @@ var kakaocertService = kakaocert.KakaocertService();
 //         console.log(error)
 //     });
 
+// 출금동의 요청
 // var CMS = {
-//     receiverHP: kakaocertService._encrypt('01012341234'),
-//     receiverName: kakaocertService._encrypt('홍길동'),
-//     receiverBirthday: kakaocertService._encrypt('19700101'),
+//     receiverHP: kakaocertService._encrypt('01067668440'),
+//     receiverName: kakaocertService._encrypt('정우석'),
+//     receiverBirthday: kakaocertService._encrypt('19900911'),
 //     reqTitle: '출금동의 요청 메시지 제목',
+//     extraMessage: kakaocertService._encrypt('출금동의 상세 설명'),
 //     expireIn: 1000,
 //     returnURL: 'https://kakao.barocert.com',
 //     requestCorp: kakaocertService._encrypt('청구 기관명란'),
 //     bankName: kakaocertService._encrypt('출금은행명란'),
 //     bankAccountNum: kakaocertService._encrypt('9-4324-5117-58'),
 //     bankAccountName: kakaocertService._encrypt('예금주명 입력란'),
-//     bankAccountBirthday: kakaocertService._encrypt('19700101'),
+//     bankAccountBirthday: kakaocertService._encrypt('19900911'),
 //     bankServiceType: kakaocertService._encrypt('CMS')
 // };
 
-// 출금동의 요청
 // kakaocertService.requestCMS('023040000001', CMS,
 //     function (response) {
 //         console.log(response)
