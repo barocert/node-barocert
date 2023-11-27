@@ -149,7 +149,7 @@ var kakaocertService = kakaocert.KakaocertService();
 //         console.log(error)
 //     });
 
-// 출금동의 요청
+// 출금동의 상태확인
 // kakaocertService.getCMSStatus('023040000001', '02304170230300000040000000000037',
 //     function (response) {
 //         console.log(response)
