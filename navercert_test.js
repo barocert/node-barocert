@@ -54,7 +54,7 @@ var navercertService = navercert.NavercertService();
 //      tokenType: 'TEXT',
 //      token: navercertService._encrypt('전자서명(단건) 요청 원문'),
 // //   tokenType: 'HASH',
-// //   token: navercertService._encrypt(navercertService._sha256('전자서명(단건) 요청 원문')),
+// //   token: navercertService._encrypt(navercertService._sha256_base64url('전자서명(단건) 요청 원문')),
 //      expireIn: 1000
 // };
 
@@ -94,12 +94,12 @@ var navercertService = navercert.NavercertService();
 //         tokenType: 'TEXT',
 //         token: navercertService._encrypt('전자서명(복수) 요청 원문 1')
 // //      tokenType: 'HASH',
-// //      token: navercertService._encrypt(navercertService._sha256('전자서명(단건) 요청 원문 1')),
+// //      token: navercertService._encrypt(navercertService._sha256_base64url('전자서명(단건) 요청 원문 1')),
 //     }, {
 //         tokenType: 'TEXT',
 //         token: navercertService._encrypt('전자서명(복수) 요청 원문 2')
 // //      tokenType: 'HASH',
-// //      token: navercertService._encrypt(navercertService._sha256('전자서명(단건) 요청 원문 2')),
+// //      token: navercertService._encrypt(navercertService._sha256_base64url('전자서명(단건) 요청 원문 2')),
 //     }]
 // };
 
