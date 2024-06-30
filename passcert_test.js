@@ -1,3 +1,4 @@
+var fs = require('fs');
 var passcert = require('./');
 
 passcert.config({
@@ -52,6 +53,8 @@ var passcertService = passcert.PasscertService();
 //         console.log(error)
 //     });
 
+// var target = fs.readFileSync("./barocert.pdf");
+
 // 전자서명 요청
 // var Sign = {
 //     receiverHP: passcertService._encrypt('01012341234'),
@@ -61,8 +64,10 @@ var passcertService = passcert.PasscertService();
 //     reqMessage: passcertService._encrypt('전자서명 요청 메시지'),
 //     callCenterNum: '1600-9854',
 //     expireIn: 1000,
-//     token: passcertService._encrypt('전자서명 요청 원문'),
 //     tokenType: 'URL',
+//     token: passcertService._encrypt('전자서명 요청 원문'),
+//     // tokenType: 'PDF',
+//     // token: passcertService._encrypt(passcertService._sha256_base64url_file(target)),
 //     userAgreementYN: true,
 //     receiverInfoYN: true,
 //     originalTypeCode: 'TR',

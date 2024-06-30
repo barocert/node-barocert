@@ -1,3 +1,4 @@
+var fs = require('fs');
 var kakaocert = require('./');
 
 kakaocert.config({
@@ -47,6 +48,8 @@ var kakaocertService = kakaocert.KakaocertService();
 //     });
 
 
+// var target = fs.readFileSync("./barocert.pdf");
+
 // 전자서명 요청(단건)
 // var requestSign = {
 //     receiverHP: kakaocertService._encrypt('01012341234'),
@@ -55,8 +58,10 @@ var kakaocertService = kakaocert.KakaocertService();
 //     signTitle: '전자서명(단건) 서명 요청 제목',
 //     extraMessage: kakaocertService._encrypt('전자서명(단건) 상세 설명'),
 //     expireIn: 1000,
-//     token: kakaocertService._encrypt('전자서명(단건) 요청 원문'),
 //     tokenType: 'TEXT',
+//     token: kakaocertService._encrypt('전자서명(단건) 요청 원문'),
+//     // tokenType: 'PDF',
+//     // token: kakaocertService._encrypt(kakaocertService._sha256_base64url_file(target)),
 //     returnURL: 'https://kakao.barocert.com',
 // };
 

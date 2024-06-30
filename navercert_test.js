@@ -1,3 +1,4 @@
+var fs = require('fs');
 var navercert = require('./');
 
 navercert.config({
@@ -43,6 +44,8 @@ var navercertService = navercert.NavercertService();
 //         console.log(error)
 //     });
 
+// var target = fs.readFileSync("./barocert.pdf");
+
 // 전자서명 요청(단건)
 // var requestSign = {
 //      receiverHP: navercertService._encrypt('01012341234'),
@@ -53,10 +56,12 @@ var navercertService = navercert.NavercertService();
 //      callCenterNum: '15441234',
 //      tokenType: 'TEXT',
 //      token: navercertService._encrypt('전자서명(단건) 요청 원문'),
-// //   tokenType: 'HASH',
-// //   token: navercertService._encrypt(navercertService._sha256_base64url('전자서명(단건) 요청 원문')),
+//      // tokenType: 'PDF',
+//      // token: navercertService._encrypt(navercertService._sha256_base64url_file(target)),
 //      expireIn: 1000
 // };
+
+// console.log(requestSign)
 
 // navercertService.requestSign('023090000021', requestSign,
 //     function (response) {
